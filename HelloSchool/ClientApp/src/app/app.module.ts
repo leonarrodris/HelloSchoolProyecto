@@ -6,7 +6,6 @@ import { RouterModule } from '@angular/router';
 import {MaterialModule} from './material/material.module';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StepperModComponent } from './stepper-mod/stepper-mod.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -17,7 +16,6 @@ import { LoginComponent } from './login/login.component';
   declarations: [
     AppComponent,
     NavMenuComponent,
-    FetchDataComponent,
     StepperModComponent,
     LoginComponent
   ],
@@ -25,9 +23,6 @@ import { LoginComponent } from './login/login.component';
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule, BrowserModule,
-    RouterModule.forRoot([
-      { path: 'fetch-data', component: FetchDataComponent },
-    ]),
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,

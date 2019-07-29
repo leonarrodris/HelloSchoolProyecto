@@ -6,91 +6,94 @@
     <mat-step [stepControl]="firstFormGroup">
         <form [formGroup]="firstFormGroup" >
         <ng-template matStepLabel>Datos del Responble</ng-template>
-        <div>
-                <mat-form-field>
-                        <mat-label>Doc. Identidad</mat-label>
-                        <mat-select [(value)]="selected">
-                          <mat-option>None</mat-option>
-                          <mat-option value="CC">CC</mat-option>
-                          <mat-option value="TI">TI</mat-option>
-                          <mat-option value="Pasaporte">Pasaporte</mat-option>
-                          <mat-option value="DNI">DNI</mat-option>
-                        </mat-select>
-                      </mat-form-field>
+        <div class="row">
+                <div class="col-6">
+                        <mat-form-field>
+                                <mat-label>Doc. Identidad</mat-label>
+                                <mat-select [(value)]="IdentidadResponsable">
+                                <mat-option>None</mat-option>
+                                <mat-option value="CC">CC</mat-option>
+                                <mat-option value="TI">TI</mat-option>
+                                <mat-option value="Pasaporte">Pasaporte</mat-option>
+                                <mat-option value="DNI">DNI</mat-option>
+                                </mat-select>
+                        </mat-form-field>
+                </div>
+                <div class="col-6">
+                        <mat-form-field>
+                                <input matInput placeholder="N° Documento" formControlName="firstCtrl" required>
+                        </mat-form-field>
+                </div>
+                <div class="col-6"> 
+                        <mat-form-field>
+                                <input matInput placeholder="Apellidos" formControlName="firstCtrl" required>
+                        </mat-form-field>
+                </div>
+                <div class="col-6">
+                        <mat-form-field>
+                                <input matInput placeholder="Nombres" formControlName="firstCtrl" required>
+                        </mat-form-field></div>
+                <div class="col-6">
+                        <mat-form-field>
+                                <input matInput placeholder="Correo Electronico" formControlName="firstCtrl" required>
+                        </mat-form-field>
+                </div>
+                <div class="col-6">
+                        <mat-form-field>
+                                <input matInput placeholder="Celular" formControlName="firstCtrl" required>
+                        </mat-form-field>
+                </div>
+                <div class="col-6">
+                        <mat-form-field>
+                                <input matInput placeholder="Parentesco" formControlName="firstCtrl" required>
+                        </mat-form-field>
+                </div>
         </div>
         <div>
-                <mat-form-field>
-                        <input matInput placeholder="N° Documento" formControlName="firstCtrl" required>
-                </mat-form-field>
-        </div>
-        <div> <mat-form-field>
-                <input matInput placeholder="Apellidos" formControlName="firstCtrl" required>
-              </mat-form-field>
-            </div>
-        <div><mat-form-field>
-                <input matInput placeholder="Nombres" formControlName="firstCtrl" required>
-        </mat-form-field></div>
-        <div>
-                <mat-form-field>
-                        <input matInput placeholder="Correo Electronico" formControlName="firstCtrl" required>
-                </mat-form-field>
-        </div>
-        <div>
-                <mat-form-field>
-                        <input matInput placeholder="Celular" formControlName="firstCtrl" required>
-                </mat-form-field>
-        </div>
-        <div>
-                <mat-form-field>
-                        <input matInput placeholder="Parentesco" formControlName="firstCtrl" required>
-                </mat-form-field>
-        </div>
-        <div>
-          <button mat-button matStepperNext>Siguiente</button>
+          <button class="btn btn-danger" mat-button matStepperNext>Siguiente</button>
         </div>
       </form>
     </mat-step>
     <mat-step [stepControl]="secondFormGroup" [optional]="isOptional">
       <form [formGroup]="secondFormGroup">
         <ng-template matStepLabel>Aspirante</ng-template>
-        <div>
-                <mat-form-field>
-                        <mat-label>Doc. Identidad</mat-label>
-                        <mat-select [(value)]="selected"     formControlName="secondCtrl" required>
-                          <mat-option>None</mat-option>
-                          <mat-option value="RC">Registro Civil</mat-option>
-                          <mat-option value="TI">TI</mat-option>
-                          <mat-option value="Pasaporte">Pasaporte</mat-option>
-                          <mat-option value="DNI">DNI</mat-option>
-                        </mat-select>
-                      </mat-form-field>
-        </div>
-        <div>
-                <mat-form-field>
-                        <input matInput placeholder="Documento" formControlName="secondCtrl" required>
-                </mat-form-field>
-        </div>
-        
-        <div>
-                <mat-form-field>
-                        <input matInput placeholder="Apellidos" formControlName="secondCtrl" required>
-                </mat-form-field>
-        </div>
+        <div class="row">
+                <div class="col-6">
+                        <mat-form-field>
+                                <mat-label>Doc. Identidad</mat-label>
+                                <mat-select [(value)]="IdentidadAspirante"     formControlName="secondCtrl" required>
+                                <mat-option>None</mat-option>
+                                <mat-option value="RC">Registro Civil</mat-option>
+                                <mat-option value="TI">TI</mat-option>
+                                <mat-option value="Pasaporte">Pasaporte</mat-option>
+                                <mat-option value="DNI">DNI</mat-option>
+                                </mat-select>
+                        </mat-form-field>
+                </div>
+                <div class="col-6">
+                        <mat-form-field>
+                                <input matInput placeholder="Documento" formControlName="secondCtrl" required>
+                        </mat-form-field>
+                </div>
+                <div class="col-6">
+                        <mat-form-field>
+                                <input matInput placeholder="Apellidos" formControlName="secondCtrl" required>
+                        </mat-form-field>
+                </div>
 
-        <div>
-                <mat-form-field>
-                        <input matInput placeholder="Nombres" formControlName="secondCtrl" required>
-                </mat-form-field>
+                <div class="col-6">
+                        <mat-form-field>
+                                <input matInput placeholder="Nombres" formControlName="secondCtrl" required>
+                        </mat-form-field>
+                </div>
+                <div class="col-6"> 
+                        <mat-form-field  >
+                                <input   formControlName="secondCtrl" required matInput [matDatepicker]="picker" placeholder="Fecha Nacimiento">
+                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                <mat-datepicker #picker></mat-datepicker>
+                        </mat-form-field>
+                </div>
         </div>
-
-        <div> <mat-form-field  >
-                <input   formControlName="secondCtrl" required matInput [matDatepicker]="picker" placeholder="Fecha Nacimiento">
-                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                <mat-datepicker #picker></mat-datepicker>
-              </mat-form-field>
-              </div>
-
-
         <div>
           <button mat-button matStepperPrevious>Anterior</button>
           <button mat-button matStepperNext>Siguiente</button>

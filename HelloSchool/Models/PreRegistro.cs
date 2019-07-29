@@ -45,7 +45,7 @@ namespace HelloSchool.Models
         public DateTimeZoneHandling FechaNacimientoEstudiante { get; set; }
 
         [JsonProperty("Estado")]
-        public bool Estado { get; set; }
+        public int Estado { get; set; }
 
     }
 }

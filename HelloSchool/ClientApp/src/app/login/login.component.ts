@@ -11,7 +11,11 @@ export class LoginComponent implements OnInit {
   imports: [
     MaterialModule
   ];
-  constructor() {  }
+ 
+  constructor() { }
+
+  
+
 
   ngOnInit() {
     $('.toggle').on('click', function() {

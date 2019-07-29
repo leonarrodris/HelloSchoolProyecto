@@ -5,7 +5,7 @@ import {StepperModComponent} from './stepper-mod/stepper-mod.component';
 
 const routes: Routes = [
   {
-    path: 'registro',
+    path: 'Preregistro',
     component: StepperModComponent
   }
 ];

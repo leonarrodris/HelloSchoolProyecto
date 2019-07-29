@@ -42,7 +42,7 @@ namespace HelloSchool.Models
         public string NombresEstudiante { get; set; }
 
         [JsonProperty("FechaNacimientoEstudiante")]
-        public DateFormatHandling FechaNacimientoEstudiante { get; set; }
+        public DateTimeZoneHandling FechaNacimientoEstudiante { get; set; }
 
         [JsonProperty("Estado")]
         public bool Estado { get; set; }

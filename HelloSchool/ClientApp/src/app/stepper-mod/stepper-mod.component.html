@@ -10,7 +10,7 @@
                 <div class="col-6">
                         <mat-form-field>
                                 <mat-label>Doc. Identidad</mat-label>
-                                <mat-select [(ngModel)]="PreRegistro.TipoDocumento" [(value)]="IdentidadResponsable">
+                                <mat-select [(value)]="IdentidadResponsable">
                                 <mat-option>None</mat-option>
                                 <mat-option value="CC">CC</mat-option>
                                 <mat-option value="TI">TI</mat-option>
@@ -21,31 +21,31 @@
                 </div>
                 <div class="col-6">
                         <mat-form-field>
-                                <input matInput type="number" min="0" step="1" placeholder="N° Documento" formControlName="firstCtrl" required [(ngModel)]="PreRegistro.NoDocumento">
+                                <input matInput type="number" min="0" step="1" placeholder="N° Documento" formControlName="firstCtrl" required>
                         </mat-form-field>
                 </div>
                 <div class="col-6"> 
                         <mat-form-field>
-                                <input matInput placeholder="Apellidos" formControlName="firstCtrl" required [(ngModel)]="PreRegistro.Apellidos">
+                                <input matInput placeholder="Apellidos" formControlName="firstCtrl" required>
                         </mat-form-field>
                 </div>
                 <div class="col-6">
                         <mat-form-field>
-                                <input matInput placeholder="Nombres" formControlName="firstCtrl" required  [(ngModel)]="PreRegistro.Nombres">
+                                <input matInput placeholder="Nombres" formControlName="firstCtrl" required>
                         </mat-form-field></div>
                 <div class="col-6">
                         <mat-form-field>
-                                <input matInput type="email" placeholder="Correo Electronico" formControlName="firstCtrl" required  [(ngModel)]="PreRegistro.Correo">
+                                <input matInput type="email" placeholder="Correo Electronico" formControlName="firstCtrl" required>
                         </mat-form-field>
                 </div>
                 <div class="col-6">
                         <mat-form-field>
-                                <input matInput placeholder="Celular" formControlName="firstCtrl" required  [(ngModel)]="PreRegistro.Celular">
+                                <input matInput placeholder="Celular" formControlName="firstCtrl" required>
                         </mat-form-field>
                 </div>
                 <div class="col-6">
                         <mat-form-field>
-                                <input matInput placeholder="Parentesco" formControlName="firstCtrl" required [(ngModel)]="PreRegistro.Parentesco">
+                                <input matInput placeholder="Parentesco" formControlName="firstCtrl" required>
                         </mat-form-field>
                 </div>
         </div>
@@ -61,7 +61,7 @@
                 <div class="col-6">
                         <mat-form-field>
                                 <mat-label>Doc. Identidad</mat-label>
-                                <mat-select [(value)]="IdentidadAspirante"     formControlName="secondCtrl" required    [(ngModel)]="PreRegistro.TipoDocumentoEstudiante">
+                                <mat-select [(value)]="IdentidadAspirante"     formControlName="secondCtrl" required>
                                 <mat-option>None</mat-option>
                                 <mat-option value="RC">Registro Civil</mat-option>
                                 <mat-option value="TI">TI</mat-option>
@@ -77,18 +77,18 @@
                 </div>
                 <div class="col-6">
                         <mat-form-field>
-                                <input matInput placeholder="Apellidos" formControlName="secondCtrl" required   [(ngModel)]="PreRegistro.NoDocumentoEstudiante">
+                                <input matInput placeholder="Apellidos" formControlName="secondCtrl" required>
                         </mat-form-field>
                 </div>
 
                 <div class="col-6">
                         <mat-form-field>
-                                <input matInput placeholder="Nombres" formControlName="secondCtrl" required  [(ngModel)]="PreRegistro.NombresEstudiante">
+                                <input matInput placeholder="Nombres" formControlName="secondCtrl" required>
                         </mat-form-field>
                 </div>
                 <div class="col-6"> 
                         <mat-form-field  >
-                                <input   formControlName="secondCtrl" required matInput [matDatepicker]="picker" placeholder="Fecha Nacimiento" [(ngModel)]="PreRegistro.FechaNacimientoEstudiante">
+                                <input   formControlName="secondCtrl" required matInput [matDatepicker]="picker" placeholder="Fecha Nacimiento">
                                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                                 <mat-datepicker #picker></mat-datepicker>
                         </mat-form-field>

@@ -8,5 +8,9 @@ base(options)
 {
 }
 public DbSet<PreRegistro> PreRegistros { get; set; }
+
+
+
+public DbSet<Usuario> Usuarios { get; set; }
 }
 }

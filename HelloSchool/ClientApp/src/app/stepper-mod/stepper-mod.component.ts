@@ -1,13 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {MaterialModule} from '../material/material.module'
+import {MaterialModule} from '../material/material.module';
 @Component({
   selector: 'app-stepper-mod',
   templateUrl: './stepper-mod.component.html',
   styleUrls: ['./stepper-mod.component.css']
 })
 export class StepperModComponent implements OnInit {
-  imports:[MaterialModule];
+  imports: [MaterialModule];
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
   isOptional = false;

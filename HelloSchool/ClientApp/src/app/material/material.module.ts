@@ -1,23 +1,24 @@
 import { NgModule } from '@angular/core';
-import {MatButtonModule, 
-  MatToolbarModule, 
+import {MatButtonModule,
+  MatToolbarModule,
   MatSidenavModule,
   MatTabsModule, MatMenuModule,
   MatStepperModule,
   MatInputModule,
   MatAutocompleteModule,
-  MatSelectModule,MatDatepickerModule,MatNativeDateModule, 
-  
+  MatSelectModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
 } from '@angular/material';
 
-const material=[MatButtonModule,MatSelectModule, MatToolbarModule,MatSidenavModule,MatTabsModule, MatMenuModule,MatStepperModule,
+const material = [MatButtonModule, MatSelectModule, MatToolbarModule, MatSidenavModule, MatTabsModule, MatMenuModule, MatStepperModule,
   MatInputModule,
-  MatAutocompleteModule,MatDatepickerModule,MatNativeDateModule, ];
+  MatAutocompleteModule, MatDatepickerModule, MatNativeDateModule, ];
 @NgModule({
   declarations: [],
   imports: [
    material
-  ], 
+  ],
   exports: [
    material
   ]

@@ -41,6 +41,9 @@ namespace HelloSchool.Models
         [JsonProperty("NombresEstudiante")]
         public string NombresEstudiante { get; set; }
 
+        [JsonProperty("FechaNacimientoEstudiante")]
+        public DateFormatHandling FechaNacimientoEstudiante { get; set; }
+
         [JsonProperty("Estado")]
         public bool Estado { get; set; }
 

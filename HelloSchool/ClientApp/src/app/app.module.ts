@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import {MaterialModule} from './material/material.module';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StepperModComponent } from './stepper-mod/stepper-mod.component';
 import { AppRoutingModule } from './app-routing.module';

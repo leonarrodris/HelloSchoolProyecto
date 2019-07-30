@@ -1,7 +1,4 @@
-<button mat-raised-button (click)="isOptional = !isOptional">
-    {{!isOptional ? 'Enable optional steps' : 'Disable optional steps'}}
-  </button>
-  
+ 
   <mat-horizontal-stepper linear #stepper>
     <mat-step [stepControl]="firstFormGroup">
         <form [formGroup]="firstFormGroup" >
@@ -26,12 +23,12 @@
                 </div>
                 <div class="col-6"> 
                         <mat-form-field>
-                                <input matInput placeholder="Apellidos" formControlName="firstCtrl" required>
+                                <input matInput type="test" placeholder="Apellidos" formControlName="firstCtrl" required>
                         </mat-form-field>
                 </div>
                 <div class="col-6">
                         <mat-form-field>
-                                <input matInput placeholder="Nombres" formControlName="firstCtrl" required>
+                                <input matInput type="test" placeholder="Nombres" formControlName="firstCtrl" required>
                         </mat-form-field></div>
                 <div class="col-6">
                         <mat-form-field>
@@ -40,12 +37,12 @@
                 </div>
                 <div class="col-6">
                         <mat-form-field>
-                                <input matInput placeholder="Celular" formControlName="firstCtrl" required>
+                                <input matInput type="number" placeholder="Celular" formControlName="firstCtrl" required>
                         </mat-form-field>
                 </div>
                 <div class="col-6">
                         <mat-form-field>
-                                <input matInput placeholder="Parentesco" formControlName="firstCtrl" required>
+                                <input matInput type="test" placeholder="Parentesco" formControlName="firstCtrl" required>
                         </mat-form-field>
                 </div>
         </div>
@@ -54,7 +51,7 @@
         </div>
       </form>
     </mat-step>
-    <mat-step [stepControl]="secondFormGroup" [optional]="isOptional">
+    <mat-step [stepControl]="secondFormGroup">
       <form [formGroup]="secondFormGroup">
         <ng-template matStepLabel>Aspirante</ng-template>
         <div class="row">
@@ -72,23 +69,23 @@
                 </div>
                 <div class="col-6">
                         <mat-form-field>
-                                <input matInput placeholder="Documento" formControlName="secondCtrl" required>
+                                <input matInput type="number" min="10000000000" placeholder="N° Documento" formControlName="secondCtrl" required>
                         </mat-form-field>
                 </div>
                 <div class="col-6">
                         <mat-form-field>
-                                <input matInput placeholder="Apellidos" formControlName="secondCtrl" required>
+                                <input matInput type="test" placeholder="Apellidos" formControlName="secondCtrl" required>
                         </mat-form-field>
                 </div>
 
                 <div class="col-6">
                         <mat-form-field>
-                                <input matInput placeholder="Nombres" formControlName="secondCtrl" required>
+                                <input matInput type="test" placeholder="Nombres" formControlName="secondCtrl" required>
                         </mat-form-field>
                 </div>
                 <div class="col-6"> 
                         <mat-form-field  >
-                                <input   formControlName="secondCtrl" required matInput [matDatepicker]="picker" placeholder="Fecha Nacimiento">
+                                <input   formControlName="secondCtrl" required matInput [matDatepicker]="picker" placeholder="Fecha Nacimiento" required>
                                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                                 <mat-datepicker #picker></mat-datepicker>
                         </mat-form-field>
